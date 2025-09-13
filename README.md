@@ -5,7 +5,9 @@ Perfect for building modern, consistent interfaces with flexible visual weight.
 
 - **2 styles**: `fill` & `outline`
 - **5 weights**: `100`, `200`, `300`, `400`, `500`
-- **450+ unique icons**
+- **448 unique icons**
+
+![image](https://github.com/yamogoo/alma-icons/blob/main/shared/images/alma-icons--md.gif)
 
 ## Demo
 
@@ -15,12 +17,12 @@ Perfect for building modern, consistent interfaces with flexible visual weight.
 
 Here are just a few examples (each available in 2 styles × 5 weights):
 
-| Icon name      | Fill (300)                                                                                                  | Outline (300)                                                                                               |
-| -------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| `rocket`       | ![](https://github.com/yamogoo/alma-icons/blob/main/packages/alma-icons/icons/rocket_fill_300.svg)          | ![](https://github.com/yamogoo/alma-icons/blob/main/packages/alma-icons/icons/rocket_outline_300.svg)       |
-| `football`     | ![](https://github.com/yamogoo/alma-icons/blob/main/packages/alma-icons/icons/football_fill_300.svg)        | ![](https://github.com/yamogoo/alma-icons/blob/main/packages/alma-icons/icons/football_outline_300.svg)     |
-| `bag`          | ![](https://github.com/yamogoo/alma-icons/blob/main/packages/alma-icons/icons/bag_fill_300.svg)             | ![](https://github.com/yamogoo/alma-icons/blob/main/packages/alma-icons/icons/bag_outline_300.svg)          |
-| `folderClosed` | ![](https://github.com/yamogoo/alma-icons/blob/main/packages/alma-icons/icons/folderClosed_outline_300.svg) | ![](https://github.com/yamogoo/alma-icons/blob/main/packages/alma-icons/icons/folderClosed_outline_300.svg) |
+| Icon name      | Fill (300)                                                                                               | Outline (300)                                                                                               |
+| -------------- | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| `rocket`       | ![](https://github.com/yamogoo/alma-icons/blob/main/packages/alma-icons/icons/rocket_fill_300.svg)       | ![](https://github.com/yamogoo/alma-icons/blob/main/packages/alma-icons/icons/rocket_outline_300.svg)       |
+| `football`     | ![](https://github.com/yamogoo/alma-icons/blob/main/packages/alma-icons/icons/football_fill_300.svg)     | ![](https://github.com/yamogoo/alma-icons/blob/main/packages/alma-icons/icons/football_outline_300.svg)     |
+| `bag`          | ![](https://github.com/yamogoo/alma-icons/blob/main/packages/alma-icons/icons/bag_fill_300.svg)          | ![](https://github.com/yamogoo/alma-icons/blob/main/packages/alma-icons/icons/bag_outline_300.svg)          |
+| `folderClosed` | ![](https://github.com/yamogoo/alma-icons/blob/main/packages/alma-icons/icons/folderClosed_fill_300.svg) | ![](https://github.com/yamogoo/alma-icons/blob/main/packages/alma-icons/icons/folderClosed_outline_300.svg) |
 
 > 👉 Every icon supports **weights 100 → 500**.
 
