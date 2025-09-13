@@ -1,8 +1,14 @@
 {
   "name": "alma-icons",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Icons Set with Multiple Weights & Styles",
-  "keywords": ["icons", "svg", "design", "alma", "ui"],
+  "keywords": [
+    "icons",
+    "svg",
+    "design",
+    "alma",
+    "ui"
+  ],
   "main": "index.js",
   "license": "SEE LICENSE IN LICENSE",
   "author": {

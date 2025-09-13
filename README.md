@@ -1,5 +1,7 @@
 # AlmaIcons
 
+[Version](https://img.shields.io/badge/version-1.0.0-green) [![License: CC BY-NC](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc.svg)](./LICENSE)
+
 ![image](https://github.com/yamogoo/alma-icons/blob/main/shared/images/alma-icons--md.gif)
 
 The versatile collection of **450+ multi-weight icons** designed with varying stroke widths to seamlessly match different UI styles.
