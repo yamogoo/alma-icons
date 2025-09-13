@@ -1,13 +1,14 @@
 # AlmaIcons
 
-The versatile collection of **450+ multi-weight icons** designed with varying stroke widths to seamlessly match different UI styles.  
+![image](https://github.com/yamogoo/alma-icons/blob/main/shared/images/alma-icons--md.gif)
+
+The versatile collection of **450+ multi-weight icons** designed with varying stroke widths to seamlessly match different UI styles.
+
 Perfect for building modern, consistent interfaces with flexible visual weight.
 
 - **2 styles**: `fill` & `outline`
-- **5 weights**: `100`, `200`, `300`, `400`, `500`
+- **5 weights**: `100` - `500`
 - **448 unique icons**
-
-![image](https://github.com/yamogoo/alma-icons/blob/main/shared/images/alma-icons--md.gif)
 
 ## Demo
 
