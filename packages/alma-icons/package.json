@@ -1,0 +1,29 @@
+{
+  "name": "alma-icons",
+  "version": "0.1.0",
+  "description": "Icons Set with Multiple Weights & Styles",
+  "keywords": ["icons", "svg", "design", "alma", "ui"],
+  "main": "index.js",
+  "license": "SEE LICENSE IN LICENSE",
+  "author": {
+    "name": "yamogoo",
+    "email": "grebennikovmisha@gmail.com",
+    "fullName": "Mikhail Grebennikov",
+    "url": "https://github.com/yamogoo"
+  },
+  "files": [
+    "icons",
+    "index.js",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "generate": "ts-node ./scripts/generate-manifest.ts",
+    "prepare": "npm run generate"
+  },
+  "packageManager": "pnpm@10.11.0",
+  "devDependencies": {
+    "@types/node": "^24.3.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}

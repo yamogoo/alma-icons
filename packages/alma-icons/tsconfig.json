@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    /* базовые настройки */
+    "target": "es2020",                    
+    "module": "nodenext",                    
+    "moduleResolution": "nodenext",            
+    "strict": true,                        
+    "esModuleInterop": true,               
+    "skipLibCheck": true,                  
+    "forceConsistentCasingInFileNames": true,
+
+    "types": ["node"],
+
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+
+    "outDir": "dist"
+  },
+  "include": [
+    "scripts/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
