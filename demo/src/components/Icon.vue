@@ -3,9 +3,7 @@ import { defineAsyncComponent, computed, markRaw } from "vue";
 
 import { iconManifest, type IconFullName, type IconProps } from "./icon";
 
-const props = withDefaults(defineProps<IconProps>(), {
-  variant: "default",
-});
+const props = defineProps<IconProps>();
 
 const symbol = computed(() => {
   const { name, style, weight } = props;
@@ -18,7 +16,7 @@ const symbol = computed(() => {
 </script>
 
 <template>
-  <div class="icon" :class="[`icon_variant-${variant}`]" data-testid="icon">
+  <div class="icon" data-testid="icon">
     <component v-if="symbol" :is="symbol" viewBox="0 0 24 24"></component>
   </div>
 </template>
