@@ -45,7 +45,7 @@ function parseFileName(filePath: string) {
   styleSet.add("fill");
   styleSet.add("outline");
 
-  for (let i = 1; i <= 7; i++) {
+  for (let i = 1; i <= 5; i++) {
     weightSet.add(`${i}00`);
   }
 
