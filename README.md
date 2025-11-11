@@ -14,7 +14,7 @@ Perfect for building modern, consistent interfaces with flexible visual weight.
 
 - **2 styles**: `fill` & `outline`
 - **5 weights**: `100` - `500`
-- **448 unique icons**
+- **470 unique icons**
 
 ## Demo
 
