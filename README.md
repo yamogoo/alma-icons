@@ -134,7 +134,7 @@ This updates `index.js` and `index.d.ts` with all available icons, names, styles
 
 ## License
 
-AlmaIcons © 2025 (Misha Grebennikov)[https://github.com/yamogoo]
+AlmaIcons © 2025-2026 (Misha Grebennikov)[https://github.com/yamogoo]
 
 Licensed under the (CC BY-NC 4.0)[https://creativecommons.org/licenses/by-nc/4.0/]
 .
