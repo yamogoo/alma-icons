@@ -2,23 +2,33 @@
 
 ![image](https://github.com/yamogoo/alma-icons/blob/main/shared/images/alma-icons-logo--lg.png)
 
-![Version](https://img.shields.io/badge/version-1.4.0-green)
+![Version](https://img.shields.io/badge/version-2.0.0-green)
 
 [![License: CC BY-NC](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc.svg)](./LICENSE)
 
 ![image](https://github.com/yamogoo/alma-icons/blob/main/shared/images/alma-icons--md.gif)
 
-The versatile collection of **450+ multi-weight icons** designed with varying stroke widths to seamlessly match different UI styles.
+Alma Icons is a **production-ready icon system** designed for scalable UI products.
 
-Perfect for building modern, consistent interfaces with flexible visual weight.
+The library includes **988 icons** (492 outline, 496 fill) built on a consistent **100–500 weight stroke system** with a stable, versioned taxonomy.
 
+Perfect for design systems, product interfaces, and long-term UI development.
+
+- **988 icons** (492 outline, 496 fill)
 - **2 styles**: `fill` & `outline`
 - **5 weights**: `100` - `500`
-- **470 unique icons**
+- Stable, scalable taxonomy
+- Strict geometric consistency
 
 ## Demo
 
 🌐 [almaicons.netlify.app](https://almaicons.netlify.app/)
+
+## Figma Community
+
+Explore the full library in Figma:
+
+👉 https://www.figma.com/community/file/1607825775789504167/alma-icons
 
 ## Preview
 
@@ -28,7 +38,7 @@ Here are just a few examples (each available in 2 styles × 5 weights):
 | -------------- | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | `rocket`       | ![](https://github.com/yamogoo/alma-icons/blob/main/packages/alma-icons/icons/rocket_fill_300.svg)       | ![](https://github.com/yamogoo/alma-icons/blob/main/packages/alma-icons/icons/rocket_outline_300.svg)       |
 | `football`     | ![](https://github.com/yamogoo/alma-icons/blob/main/packages/alma-icons/icons/football_fill_300.svg)     | ![](https://github.com/yamogoo/alma-icons/blob/main/packages/alma-icons/icons/football_outline_300.svg)     |
-| `bag`          | ![](https://github.com/yamogoo/alma-icons/blob/main/packages/alma-icons/icons/bag_fill_300.svg)          | ![](https://github.com/yamogoo/alma-icons/blob/main/packages/alma-icons/icons/bag_outline_300.svg)          |
+| `bag`          | ![](https://github.com/yamogoo/alma-icons/blob/main/packages/alma-icons/icons/shoppingBag_fill_300.svg)  | ![](https://github.com/yamogoo/alma-icons/blob/main/packages/alma-icons/icons/shoppingBag_outline_300.svg)  |
 | `folderClosed` | ![](https://github.com/yamogoo/alma-icons/blob/main/packages/alma-icons/icons/folderClosed_fill_300.svg) | ![](https://github.com/yamogoo/alma-icons/blob/main/packages/alma-icons/icons/folderClosed_outline_300.svg) |
 
 > 👉 Every icon supports **weights 100 → 500**.
@@ -134,9 +144,10 @@ This updates `index.js` and `index.d.ts` with all available icons, names, styles
 
 ## License
 
-AlmaIcons © 2025-2026 (Misha Grebennikov)[https://github.com/yamogoo]
+Alma Icons © 2025–2026 [Misha Grebennikov](https://github.com/yamogoo)  
+https://github.com/yamogoo
 
-Licensed under the (CC BY-NC 4.0)[https://creativecommons.org/licenses/by-nc/4.0/]
+Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
 .
 
 - You must give appropriate credit, provide a link to the license, and indicate if changes were made.
