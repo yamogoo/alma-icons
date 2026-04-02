@@ -1,0 +1,13 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.5 19.5H4.5V16.5H7.5V19.5Z" fill="black"/>
+<path d="M11.5 19.5H8.5V16.5H11.5V19.5Z" fill="black"/>
+<path d="M15.5 19.5H12.5V16.5H15.5V19.5Z" fill="black"/>
+<path d="M19.5 19.5H16.5V16.5H19.5V19.5Z" fill="black"/>
+<path d="M11.5 15.5H8.5V12.5H11.5V15.5Z" fill="black"/>
+<path d="M15.5 15.5H12.5V12.5H15.5V15.5Z" fill="black"/>
+<path d="M19.5 15.5H16.5V12.5H19.5V15.5Z" fill="black"/>
+<path d="M15.5 11.5H12.5V8.5H15.5V11.5Z" fill="black"/>
+<path d="M19.5 11.5H16.5V8.5H19.5V11.5Z" fill="black"/>
+<path d="M19.5 7.5H16.5V4.5H19.5V7.5Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 0.25C22.2949 0.25 23.75 1.70507 23.75 3.5V20.5C23.75 22.2949 22.2949 23.75 20.5 23.75H3.5C1.70507 23.75 0.25 22.2949 0.25 20.5V3.5C0.25 1.70507 1.70507 0.25 3.5 0.25H20.5ZM3.5 2.75C3.08579 2.75 2.75 3.08579 2.75 3.5V20.5C2.75 20.9142 3.08579 21.25 3.5 21.25H20.5C20.9142 21.25 21.25 20.9142 21.25 20.5V3.5C21.25 3.08579 20.9142 2.75 20.5 2.75H3.5Z" fill="black"/>
+</svg>
