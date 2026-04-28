@@ -40,14 +40,14 @@ import { AlmaIcon } from "alma-icons/vue";
 const react: Array<CodeBlock> = [
   {
     lang: "ts",
-    code: `<!-- Static mode -->
+    code: `/* * * Static mode * * */
 import { SearchOutline400 } from "alma-icons/react/icons";
 
 export function SearchButton() {
   return <SearchOutline400 size={20} title="Search" decorative={false} />;
 }
 
-<!-- Dynamic mode -->
+/* * * Dynamic mode * * */
 import { AlmaIcon } from "alma-icons/react";
 
 export function Preview() {
