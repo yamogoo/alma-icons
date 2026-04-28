@@ -1,0 +1,19 @@
+{
+  "name": "core-styles",
+  "private": true,
+  "version": "0.0.2",
+  "description": "Common mixins",
+  "author": {
+    "name": "yamogoo",
+    "email": "grebennikovmisha@gmail.com"
+  },
+  "keywords": [
+    "mixins"
+  ],
+  "exports": {
+    ".": "./src/_index.scss"
+  },
+  "files": [
+    "src/*"
+  ]
+}

@@ -11,6 +11,9 @@ node_modules
 dist
 dist-ssr
 *.local
+!packages/alma-icons/dist/
+!packages/alma-icons/dist/**
+packages/alma-icons/.generate-lock/
 
 # Editor directories and files
 .vscode/*
@@ -29,3 +32,7 @@ electron
 *storybook.log
 storybook-static
 tests-report
+
+
+# Local Netlify folder
+.netlify

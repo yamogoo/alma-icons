@@ -1,0 +1,36 @@
+{
+  "intro-cover": {
+    "title": "适用于 React 和 Vue 的生产就绪图标组件。\n每种风格 600+ 个图标。支持静态导入、懒加载和动态渲染。",
+    "description": ""
+  },
+  "main-cover": {
+    "version": "版本",
+    "logo": {
+      "title": "Alma Icons",
+      "description": "生产级图标系统"
+    }
+  },
+  "setup-guide": {
+    "documentation-vue": "Vue3 文档",
+    "documentation-react": "React 文档"
+  },
+  "install-guide": {
+    "install": "安装",
+    "pluginName": "Alma Icons 插件",
+    "catalogueName": "Alma Icons 目录"
+  },
+  "info-cover": {
+    "links": {
+      "figmaLibrary": "Figma 组件库",
+      "figmaPlugin": "Figma 插件",
+      "webCatalogue": "网页目录",
+      "gitRepository": "Git 仓库"
+    },
+    "licensedBy": "本项目基于以下条款授权：",
+    "license": "许可证",
+    "assetLicense": "图标基于以下条款授权：",
+    "assetsLicenseName": "CC BY-NC",
+    "author": "作者",
+    "author-name": "米沙·格列边尼科夫"
+  }
+}

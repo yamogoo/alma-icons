@@ -1,0 +1,36 @@
+{
+  "intro-cover": {
+    "title": "Composants d'icônes prêts pour la production pour React et Vue.\n600+ icônes par style. Imports statiques, chargement différé et rendu dynamique.",
+    "description": ""
+  },
+  "main-cover": {
+    "version": "version",
+    "logo": {
+      "title": "Alma Icons",
+      "description": "Système d'icônes de production"
+    }
+  },
+  "setup-guide": {
+    "documentation-vue": "Documentation pour Vue3",
+    "documentation-react": "Documentation pour React"
+  },
+  "install-guide": {
+    "install": "Installer",
+    "pluginName": "plugin Alma Icons",
+    "catalogueName": "catalogue Alma Icons"
+  },
+  "info-cover": {
+    "links": {
+      "figmaLibrary": "Bibliothèque Figma",
+      "figmaPlugin": "Plugin Figma",
+      "webCatalogue": "Catalogue web",
+      "gitRepository": "Dépôt Git"
+    },
+    "licensedBy": "Ce projet est distribué selon les termes de la",
+    "license": "licence",
+    "assetLicense": "Les icônes sont distribuées selon les termes de la",
+    "assetsLicenseName": "CC BY-NC",
+    "author": "Auteur",
+    "author-name": "Misha Grebennikov"
+  }
+}

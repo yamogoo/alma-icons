@@ -1,3 +1,4 @@
 packages:
   - packages/*
-  - demo
+  - packages/helpers/*
+  - apps/demo

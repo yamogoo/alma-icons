@@ -65,82 +65,108 @@ yarn add alma-icons
 
 ## Usage
 
-Import icons dynamically in your Vue or React project.
+Alma Icons supports two integration modes.
 
-### Vue example
+### Static mode
+
+Static mode is recommended for production UI. Import only the icons your app uses; bundlers can tree-shake the rest, and direct icon components are SSR-friendly.
+
+React:
+
+```tsx
+import { SearchOutline400 } from "alma-icons/react/icons";
+
+export function SearchButton() {
+  return <SearchOutline400 size={20} title="Search" decorative={false} />;
+}
+```
+
+Direct per-icon React import:
+
+```tsx
+import SearchOutline400 from "alma-icons/react/icons/SearchOutline400";
+```
+
+Vue:
 
 ```vue
-<!-- Icon.vue -->
 <script setup lang="ts">
-import { defineAsyncComponent, computed, markRaw } from "vue";
-
-import { iconManifest, type IconFullName, type IconProps } from "./icon";
-
-const props = defineProps<IconProps>();
-
-const symbol = computed(() => {
-  const { name, style, weight } = props;
-
-  const key = `${name}_${style}_${weight}`;
-
-  const loader = iconManifest[key as IconFullName];
-  return loader ? markRaw(defineAsyncComponent(loader)) : null;
-});
+import { SearchOutline400 } from "alma-icons/vue/icons";
 </script>
 
 <template>
-  <div class="icon" :class="[`icon_variant-${variant}`]" data-testid="icon">
-    <component v-if="symbol" :is="symbol" viewBox="0 0 24 24"></component>
-  </div>
+  <SearchOutline400 :size="20" title="Search" :decorative="false" />
 </template>
 ```
 
+Direct per-icon Vue import:
+
 ```ts
-// icon.ts
+import SearchOutline400 from "alma-icons/vue/icons/SearchOutline400";
+```
 
-import { iconNames, iconStyles, iconWeights } from "alma-icons";
+### Dynamic mode
 
-import type { UIElementVariant } from "@/typings";
+Dynamic mode is for icon browsers, search UIs, plugin UIs, previews, and other places where the icon name is chosen at runtime. It uses a lazy generated manifest and resolves icons by name, style, and weight.
 
-export type IconName = (typeof iconNames)[number];
+React:
 
-export type IconStyle = (typeof iconStyles)[number];
+```tsx
+import { AlmaIcon } from "alma-icons/react";
 
-export type IconWeight = (typeof iconWeights)[number];
-
-export interface IconProps {
-  variant?: UIElementVariant;
-  name: IconName;
-  style: IconStyle;
-  weight: IconWeight;
+export function Preview() {
+  return <AlmaIcon name="search" appearance="outline" weight="400" size={20} />;
 }
-
-export * from "alma-icons";
 ```
 
-### TypeScript types
+Vue:
 
-AlmaIcons provides strict type support:
+```vue
+<script setup lang="ts">
+import { AlmaIcon } from "alma-icons/vue";
+</script>
+
+<template>
+  <AlmaIcon name="search" appearance="outline" weight="400" :size="20" />
+</template>
+```
+
+The root package also exposes metadata and the backwards-compatible lazy SVG manifest:
 
 ```ts
-import type { IconName, IconStyle, IconWeight } from "alma-icons";
+import {
+  iconManifest,
+  iconNames,
+  iconStyles,
+  iconWeights,
+  hasIconVariant,
+  resolveIconKey,
+  type AlmaIconName,
+  type AlmaIconStyle,
+  type AlmaIconWeight,
+} from "alma-icons";
 
-const name: IconName = "check";
-const style: IconStyle = "fill";
-const weight: IconWeight = "400";
+const key = resolveIconKey({ name: "search", style: "outline", weight: "400" });
+const exists = hasIconVariant({ name: "search", style: "outline", weight: "400" });
 ```
 
-_This enables autocomplete and prevents invalid icon usage._
+> Package examples use the current package name, `alma-icons`. If you publish split scoped entry packages, the same generated API maps to `@alma-icons/react`, `@alma-icons/react/icons`, `@alma-icons/vue`, and `@alma-icons/vue/icons`.
 
 ## Development
 
-To regenerate manifest after adding new icons:
+To regenerate icons after adding new SVG files, run from the repository root or `packages/alma-icons`:
 
 ```bash
 pnpm generate
 ```
 
-This updates `index.js` and `index.d.ts` with all available icons, names, styles, and weights.
+This updates `dist/`, `index.js`, and `index.d.ts` with metadata, the lazy SVG manifest, and generated React/Vue components.
+
+To validate the generated package surface, run from the repository root or `packages/alma-icons`:
+
+```bash
+pnpm validate
+```
 
 ## License
 

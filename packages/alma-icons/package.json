@@ -8,6 +8,7 @@
     "url": "https://github.com/yamogoo"
   },
   "description": "Icons Set with Multiple Weights & Styles",
+  "type": "module",
   "keywords": [
     "icons",
     "svg",
@@ -16,17 +17,74 @@
     "ui"
   ],
   "license": "SEE LICENSE IN LICENSE",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./react": {
+      "types": "./dist/react/index.d.ts",
+      "import": "./dist/react/index.js"
+    },
+    "./react/icons": {
+      "types": "./dist/react/icons/index.d.ts",
+      "import": "./dist/react/icons/index.js"
+    },
+    "./react/icons/*": {
+      "types": "./dist/react/icons/*.d.ts",
+      "import": "./dist/react/icons/*.js"
+    },
+    "./vue": {
+      "types": "./dist/vue/index.d.ts",
+      "import": "./dist/vue/index.js"
+    },
+    "./vue/icons": {
+      "types": "./dist/vue/icons/index.d.ts",
+      "import": "./dist/vue/icons/index.js"
+    },
+    "./vue/icons/*": {
+      "types": "./dist/vue/icons/*.d.ts",
+      "import": "./dist/vue/icons/*.js"
+    },
+    "./manifest": {
+      "types": "./dist/manifest.d.ts",
+      "import": "./dist/manifest.js"
+    },
+    "./metadata": {
+      "types": "./dist/metadata.d.ts",
+      "import": "./dist/metadata.js"
+    }
+  },
   "files": [
     "icons",
+    "dist",
     "index.js",
-    "index.d.ts"
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
-    "generate": "ts-node ./scripts/generate-manifest.ts",
-    "prepare": "pnpm run generate"
+    "generate": "ts-node --esm ./scripts/generate-manifest.ts",
+    "validate": "node ./scripts/validate-generated.mjs",
+    "prepack": "pnpm run generate"
   },
   "packageManager": "pnpm@10.11.0",
+  "peerDependencies": {
+    "react": ">=18",
+    "vue": ">=3.3"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "vue": {
+      "optional": true
+    }
+  },
   "devDependencies": {
     "@types/node": "^24.12.2",
     "ts-node": "^10.9.2",

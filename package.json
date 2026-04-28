@@ -1,7 +1,7 @@
 {
   "name": "alma",
-  "version": "2.19.0",
-  "description": "Icons Set with Multiple Weights & Styles",
+  "version": "3.0.0",
+  "description": "A production icon system built for consistency - crafted across multiple stroke weights for seamless integration into any UI.",
   "keywords": [
     "icons",
     "svg",
@@ -17,6 +17,10 @@
     "fullName": "Mikhail Grebennikov",
     "url": "https://github.com/yamogoo"
   },
-  "scripts": {},
+  "scripts": {
+    "generate": "pnpm --dir packages/alma-icons exec ts-node --esm ./scripts/generate-manifest.ts",
+    "validate": "node packages/alma-icons/scripts/validate-generated.mjs",
+    "prepack": "pnpm run generate && pnpm run validate"
+  },
   "packageManager": "pnpm@10.11.0"
 }

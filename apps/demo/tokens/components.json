@@ -1,0 +1,153 @@
+{
+  "scrollbar": {
+    "width": 3,
+    "borderRadius": 1
+  },
+  "mainContainer": {
+    "respond": {
+      "mobile": {
+        "padding": "{tokens.spacing.xxs}"
+      },
+      "desktop": {
+        "padding": "{tokens.spacing.xs}"
+      }
+    },
+    "roundness": "{tokens.roundness.md}"
+  },
+  "blockContainer": {
+    "md": {
+      "padding": "{tokens.spacing.xxs}",
+      "roundness": "{tokens.roundness.sm}"
+    },
+    "lg": {
+      "padding": "{tokens.spacing.xxs}",
+      "roundness": "{tokens.roundness.md}"
+    }
+  },
+  "layout": {
+    "topResizer": {
+      "minHeight": 400
+    },
+    "cover": {
+      "width": 400,
+      "height": "",
+      "minHeight": 0,
+      "minWidth": 400,
+      "maxWidth": 400,
+      "respond": {
+        "mobile": {
+          "padding": "{tokens.spacing.lg}",
+          "groupPadding": "{tokens.spacing.sm}",
+          "logoSize": 96
+        },
+        "tablet": {
+          "padding": "{tokens.spacing.xl}",
+          "groupPadding": "{tokens.spacing.md}",
+          "logoSize": 96
+        },
+        "desktop": {
+          "padding": "{tokens.spacing.xxl}",
+          "groupPadding": "{tokens.spacing.lg}",
+          "logoSize": 88
+        }
+      }
+    },
+    "installGuide": {
+      "width": 400,
+      "minWidth": 400,
+      "maxWidth": 400
+    },
+    "setupGuide": {
+      "width": 400,
+      "minWidth": 400,
+      "maxWidth": 400
+    },
+    "info": {
+      "height": 400,
+      "minHeight": 400,
+      "maxHeight": 640,
+      "width": 800,
+      "minWidth": 580,
+      "maxWidth": 960,
+      "minContentWidth": 240,
+      "maxContentWidth": 480
+    }
+  },
+  "link": {
+    "sm": {
+      "font": "body__2",
+      "icon-size": "{tokens.icon.xs.size}",
+      "icon-margin": "{tokens.spacing.xs}"
+    },
+    "md": {
+      "font": "body__2",
+      "icon-size": "{tokens.icon.sm.size}",
+      "icon-margin": "{tokens.spacing.xs}"
+    },
+    "lg": {
+      "font": "body__1",
+      "icon-size": "{tokens.icon.md.size}",
+      "icon-margin": "{tokens.spacing.xs}"
+    }
+  },
+  "options": {
+    "option": {
+      "minHeight": 24
+    }
+  },
+  "switch": {
+    "md": {
+      "width": 40,
+      "height": 20,
+      "gap": "{tokens.gap.xs}",
+      "padding": 2,
+      "roundness": "{components.switch.md.height}",
+      "label": {
+        "font": "label__1"
+      },
+      "knob": {
+        "size": 16
+      }
+    }
+  },
+  "tabbar": {
+    "md": {
+      "font": "label__1",
+      "gap": 0
+    }
+  },
+  "codeBlock": {
+    "lineHeight": "1.75em",
+    "tabSize": "4"
+  },
+  "logo": {
+    "mobile": {
+      "size": 92,
+      "gap": "{tokens.gap.sm}",
+      "font": "display__1",
+      "whitelabel": {
+        "font": "body__3"
+      }
+    },
+    "desktop": {
+      "size": 92,
+      "gap": "{tokens.gap.sm}",
+      "font": "display__1",
+      "whitelabel": {
+        "font": "body__3"
+      }
+    }
+  },
+  "resizer": {
+    "activeAreaWidth": 20,
+    "knobWidth": 76,
+    "knobHeight": 6,
+    "knobRoundness": 3
+  },
+  "speedEffect": {
+    "minSize": 640,
+    "maxSize": 1440,
+    "opacityMin": 0.25,
+    "opacityMax": 1
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "intro-cover": {
+    "title": "Produktionsreife Icon-Komponenten für React und Vue.\n600+ Icons pro Stil. Statische Importe, Lazy Loading und dynamisches Rendering.",
+    "description": ""
+  },
+  "main-cover": {
+    "version": "Version",
+    "logo": {
+      "title": "Alma Icons",
+      "description": "Produktionsreifes Icon-System"
+    }
+  },
+  "setup-guide": {
+    "documentation-vue": "Dokumentation für Vue3",
+    "documentation-react": "Dokumentation für React"
+  },
+  "install-guide": {
+    "install": "Installieren",
+    "pluginName": "Alma Icons Plugin",
+    "catalogueName": "Alma Icons Katalog"
+  },
+  "info-cover": {
+    "links": {
+      "figmaLibrary": "Figma-Bibliothek",
+      "figmaPlugin": "Figma-Plugin",
+      "webCatalogue": "Web-Katalog",
+      "gitRepository": "Git-Repository"
+    },
+    "licensedBy": "Dieses Projekt ist lizenziert unter den Bedingungen der",
+    "license": "Lizenz",
+    "assetLicense": "Die Icons sind lizenziert unter den Bedingungen der",
+    "assetsLicenseName": "CC BY-NC",
+    "author": "Autor",
+    "author-name": "Misha Grebennikov"
+  }
+}

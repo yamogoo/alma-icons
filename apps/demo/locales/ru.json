@@ -1,0 +1,36 @@
+{
+  "intro-cover": {
+    "title": "Готовые к production иконки-компоненты для React и Vue.\n600+ иконок в каждом стиле. Статические импорты, ленивая загрузка и динамический рендеринг.",
+    "description": ""
+  },
+  "main-cover": {
+    "version": "версия",
+    "logo": {
+      "title": "Alma Icons",
+      "description": "Система иконок для продакшена"
+    }
+  },
+  "setup-guide": {
+    "documentation-vue": "Документация для Vue3",
+    "documentation-react": "Документация для React"
+  },
+  "install-guide": {
+    "install": "Установить",
+    "pluginName": "плагин Alma Icons",
+    "catalogueName": "каталог Alma Icons"
+  },
+  "info-cover": {
+    "links": {
+      "figmaLibrary": "Библиотека Figma",
+      "figmaPlugin": "Плагин Figma",
+      "webCatalogue": "Веб-каталог",
+      "gitRepository": "Git-репозиторий"
+    },
+    "licensedBy": "Этот проект распространяется на условиях",
+    "license": "лицензии",
+    "assetLicense": "Иконки распространяются на условиях",
+    "assetsLicenseName": "CC BY-NC",
+    "author": "Автор",
+    "author-name": "Миша Гребенников"
+  }
+}

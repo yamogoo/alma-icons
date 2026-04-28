@@ -1,0 +1,212 @@
+<script setup lang="ts">
+import { ref, onMounted, onUnmounted } from "vue";
+import { storeToRefs } from "pinia";
+
+import { useLocaleStore } from "@/stores/locale";
+import { useConfigStore } from "@/stores/config";
+
+import GProvider from "@/components/transition/GProvider.vue";
+import Badge from "@/components/badges/Badge.vue";
+import MainLogo from "@/components/logos/MainLogo.vue";
+import ControlsHeader from "@/components/container/ControlsHeader.vue";
+
+withDefaults(defineProps<Props>(), {
+  isDateShown: false,
+});
+
+const { $t } = storeToRefs(useLocaleStore());
+
+const { currentPackageVersion } = storeToRefs(useConfigStore());
+
+const isMounted = ref(false);
+
+onMounted(() => {
+  isMounted.value = true;
+});
+
+onUnmounted(() => {
+  isMounted.value = false;
+});
+</script>
+
+<script lang="ts">
+export interface Props {
+  title: string;
+  description?: string;
+  isDateShown?: boolean;
+}
+</script>
+
+<template>
+  <div class="ui-main-cover">
+    <ControlsHeader class="ui-main-cover__controls">
+      <slot name="controls"></slot>
+    </ControlsHeader>
+    <div class="ui-main-cover__body">
+      <GProvider
+        :show="isMounted"
+        :before-enter="{ opacity: 0, scale: 0.5 }"
+        :enter="{
+          opacity: 1,
+          scale: 1,
+          ease: 'power4.out',
+          duration: 0.75,
+        }"
+      >
+        <MainLogo :descriptor="title" :whitelabel="description"></MainLogo>
+      </GProvider>
+    </div>
+    <GProvider
+      :show="isMounted"
+      :before-enter="{ opacity: 0, y: 80 }"
+      :enter="{
+        opacity: 1,
+        y: 0,
+        ease: 'power4.out',
+        duration: 0.5,
+        delay: 0.35,
+      }"
+    >
+      <div
+        class="ui-main-cover__footer"
+        :direction="'horizontal'"
+        :alignment="'center'"
+        data-testid="ui-main-cover-footer"
+      >
+        <Badge
+          :label="`${$t['main-cover'].version}`"
+          :value="`${currentPackageVersion}`"
+        ></Badge>
+        <span v-if="isDateShown" class="ui-main-cover__date">2024-2026</span>
+      </div>
+    </GProvider>
+  </div>
+</template>
+
+<style lang="scss">
+@use "sass:map";
+
+.ui-main-cover {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  @include box(100%);
+
+  @include respond-above(lg) {
+    padding: px2rem(
+      map.get(
+        map.get(map.get(map.get($layout, "cover"), "respond"), "desktop"),
+        "padding"
+      )
+    );
+  }
+
+  @include respond-between(md, lg) {
+    padding: px2rem(
+      map.get(
+        map.get(map.get(map.get($layout, "cover"), "respond"), "tablet"),
+        "padding"
+      )
+    );
+  }
+
+  @include respond-below(md) {
+    padding: px2rem(
+      map.get(
+        map.get(map.get(map.get($layout, "cover"), "respond"), "mobile"),
+        "padding"
+      )
+    );
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    @include box(100%, auto);
+  }
+
+  &__footer {
+    width: 100%;
+  }
+
+  &__body,
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ui-goup {
+    @include respond-above(lg) {
+      padding: px2rem(
+        map.get(
+          map.get(map.get(map.get($layout, "cover"), "respond"), "desktop"),
+          "groupPadding"
+        )
+      );
+    }
+
+    @include respond-between(md, lg) {
+      padding: px2rem(
+        map.get(
+          map.get(map.get(map.get($layout, "cover"), "respond"), "tablet"),
+          "groupPadding"
+        )
+      );
+    }
+
+    @include respond-below(md) {
+      padding: px2rem(
+        map.get(
+          map.get(map.get(map.get($layout, "cover"), "respond"), "mobile"),
+          "groupPadding"
+        )
+      );
+    }
+  }
+
+  &__logo {
+    @include respond-above(lg) {
+      padding: px2rem(
+        map.get(
+          map.get(map.get(map.get($layout, "cover"), "respond"), "desktop"),
+          "logoSize"
+        )
+      );
+    }
+
+    @include respond-between(md, lg) {
+      padding: px2rem(
+        map.get(
+          map.get(map.get(map.get($layout, "cover"), "respond"), "tablet"),
+          "logoSize"
+        )
+      );
+    }
+
+    @include respond-below(md) {
+      padding: px2rem(
+        map.get(
+          map.get(map.get(map.get($layout, "cover"), "respond"), "mobile"),
+          "logoSize"
+        )
+      );
+    }
+  }
+
+  &__date {
+    @extend %t__body__1;
+    @include themify($themes) {
+      color: themed("label", "secondary");
+    }
+    @extend %base-transition;
+  }
+
+  &__controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+  }
+}
+</style>
