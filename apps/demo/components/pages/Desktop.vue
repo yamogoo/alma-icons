@@ -37,7 +37,7 @@ watch(
     layout.value.info.width = Math.round(
       props.layoutSize.width - layout.value.setupGuide.width,
     );
-    layout.value.info.height = Math.round(props.layoutSize.height / 2);
+    layout.value.info.height = Math.round(props.layoutSize.height / 2.5);
   },
   { deep: true, immediate: true, flush: "pre" },
 );
