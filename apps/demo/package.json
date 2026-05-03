@@ -3,9 +3,9 @@
   "title": "Alma Icons",
   "description": "A production icon system built for consistency - crafted across multiple stroke weights for seamless integration into any UI.",
   "private": true,
-  "version": "3.2.0",
-  "productVueVersion": "3.2.0",
-  "productReactVersion": "3.2.0",
+  "version": "3.2.1",
+  "productVueVersion": "3.2.1",
+  "productReactVersion": "3.2.1",
   "type": "module",
   "author": {
     "name": "yamogoo",
