@@ -1,6 +1,6 @@
 {
-  "name": "alma-icons",
-  "version": "3.6.0",
+  "name": "alma-brands",
+  "version": "1.2.0",
   "author": {
     "name": "yamogoo",
     "email": "grebennikovmisha@gmail.com",
@@ -12,9 +12,7 @@
   "keywords": [
     "icons",
     "svg",
-    "design",
-    "alma",
-    "ui"
+    "logos"
   ],
   "license": "SEE LICENSE IN LICENSE",
   "main": "./dist/index.js",

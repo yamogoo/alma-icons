@@ -2,7 +2,7 @@
 
 ![image](https://github.com/yamogoo/alma-icons/blob/main/shared/images/alma-icons-logo--lg.png)
 
-![Version](https://img.shields.io/badge/version-3.5.0-green)
+![Version](https://img.shields.io/badge/version-3.6.0-green)
 
 [![License: CC BY-NC](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc.svg)](./LICENSE)
 
@@ -10,11 +10,11 @@
 
 Alma Icons is a **production-ready icon system** designed for scalable UI products.
 
-The library includes **1220 icons** (610 outline, 610 fill) built on a consistent **100–500 weight stroke system** with a stable, versioned taxonomy.
+The library includes **1224 icons** (612 outline, 612 fill) built on a consistent **100–500 weight stroke system** with a stable, versioned taxonomy.
 
 Perfect for design systems, product interfaces, and long-term UI development.
 
-- **1220 icons** (610 outline, 610 fill)
+- **1224 icons** (612 outline, 612 fill)
 - **2 styles**: `fill` & `outline`
 - **5 weights**: `100` - `500`
 - Stable, scalable taxonomy
@@ -77,7 +77,7 @@ React:
 import { SearchOutline400 } from "alma-icons/react/icons";
 
 export function SearchButton() {
-  return <SearchOutline400 size={20} title="Search" decorative={false} />;
+  return <SearchOutline400 />;
 }
 ```
 
@@ -95,7 +95,7 @@ import { SearchOutline400 } from "alma-icons/vue/icons";
 </script>
 
 <template>
-  <SearchOutline400 :size="20" title="Search" :decorative="false" />
+  <SearchOutline400 />
 </template>
 ```
 
@@ -115,7 +115,7 @@ React:
 import { AlmaIcon } from "alma-icons/react";
 
 export function Preview() {
-  return <AlmaIcon name="search" appearance="outline" weight="400" size={20} />;
+  return <AlmaIcon name="search" appearance="outline" weight="400" />;
 }
 ```
 
@@ -127,7 +127,7 @@ import { AlmaIcon } from "alma-icons/vue";
 </script>
 
 <template>
-  <AlmaIcon name="search" appearance="outline" weight="400" :size="20" />
+  <AlmaIcon name="search" appearance="outline" weight="400" />
 </template>
 ```
 
