@@ -1,6 +1,6 @@
 {
   "name": "alma-brands",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "author": {
     "name": "yamogoo",
     "email": "grebennikovmisha@gmail.com",
@@ -55,7 +55,9 @@
     "./metadata": {
       "types": "./dist/metadata.d.ts",
       "import": "./dist/metadata.js"
-    }
+    },
+    "./icons/svg": "./icons",
+    "./icons/svg/*": "./icons/*"
   },
   "files": [
     "icons",
