@@ -6,7 +6,7 @@
 
 # AlmaBrands
 
-![Version](https://img.shields.io/badge/version-1.2.2-green)
+![Version](https://img.shields.io/badge/version-1.3.0-green)
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-black.svg)](./LICENSE)
 
@@ -14,7 +14,7 @@ Alma Brands is a structured brand asset system for scalable UI products, design 
 
 The library provides normalized SVG brand assets with a stable, versioned taxonomy and generated React/Vue component exports. It is designed to work as a companion package to Alma Icons while keeping brand assets, naming, licensing notes, and package lifecycle separate.
 
-- **62 unique brand assets**
+- **63 unique brand assets**
 - **2 primary variants**: `mark` & `standard`
 - Multiple appearances, including `color` and `monochrome`
 - Stable, scalable taxonomy
