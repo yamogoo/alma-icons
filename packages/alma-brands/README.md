@@ -6,7 +6,7 @@
 
 # AlmaBrands
 
-![Version](https://img.shields.io/badge/version-1.4.0-green)
+![Version](https://img.shields.io/badge/version-1.4.1-green)
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-black.svg)](./LICENSE)
 
