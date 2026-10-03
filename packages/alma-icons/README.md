@@ -2,7 +2,7 @@
 
 ![image](https://github.com/yamogoo/alma-icons/blob/main/shared/images/alma-icons-logo--lg.png)
 
-![Version](https://img.shields.io/badge/version-3.7.0-green)
+![Version](https://img.shields.io/badge/version-3.8.0-green)
 
 [![License: CC BY-NC](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc.svg)](./LICENSE)
 
@@ -10,7 +10,7 @@
 
 Alma Icons is a **production-ready icon system** designed for scalable UI products.
 
-The library includes **1228 icons** (616 outline, 616 fill) built on a consistent **100–500 weight stroke system** with a stable, versioned taxonomy.
+The library includes **1228 icons** (617 outline, 617 fill) built on a consistent **100–500 weight stroke system** with a stable, versioned taxonomy.
 
 Perfect for design systems, product interfaces, and long-term UI development.
 
