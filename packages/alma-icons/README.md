@@ -2,7 +2,7 @@
 
 ![image](https://github.com/yamogoo/alma-icons/blob/main/shared/images/alma-icons-logo--lg.png)
 
-![Version](https://img.shields.io/badge/version-3.8.0-green)
+![Version](https://img.shields.io/badge/version-3.9.0-green)
 
 [![License: CC BY-NC](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc.svg)](./LICENSE)
 
@@ -14,7 +14,7 @@ The library includes **1228 icons** (617 outline, 617 fill) built on a consisten
 
 Perfect for design systems, product interfaces, and long-term UI development.
 
-- **1228 icons** (616 outline, 616 fill)
+- **1232 icons** (618 outline, 618 fill)
 - **2 styles**: `fill` & `outline`
 - **5 weights**: `100` - `500`
 - Stable, scalable taxonomy
